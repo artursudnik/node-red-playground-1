@@ -5,6 +5,7 @@ services:
     image: nodered/node-red@sha256:0e3b590064a6bb32996aaa4ca63f0c17e63c877cc5219de501820e6457a616f1
     environment:
       - TZ=Europe/Warsaw
+      - FLOWS=/flows/flows.json
     ports:
       - '127.0.0.1:1880:1880'
     command: -s /settings/settings.js
@@ -12,4 +13,5 @@ services:
       - ./volumes/node_red_data:/data
       - ./settings:/settings
       - ./volumes/output-data:/output-data
+      - ./flows:/flows
 
