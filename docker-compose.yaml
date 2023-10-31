@@ -11,4 +11,5 @@ services:
     volumes:
       - ./volumes/node_red_data:/data
       - ./settings:/settings
+      - ./volumes/output-data:/output-data
 
