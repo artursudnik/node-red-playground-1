@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  node-red:
+    image: nodered/node-red@sha256:0e3b590064a6bb32996aaa4ca63f0c17e63c877cc5219de501820e6457a616f1
+    environment:
+      - TZ=Europe/Warsaw
+    ports:
+      - '127.0.0.1:1880:1880'
+    volumes:
+      - ./volumes/node_red_data:/data
+
