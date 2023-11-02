@@ -17,3 +17,4 @@ services:
       - ./settings:/settings
       - ./volumes/output-data:/output-data
       - ./flows:/flows
+      - ./library:/library

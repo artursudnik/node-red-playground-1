@@ -384,6 +384,21 @@ module.exports = {
          */
         //tours: false,
 
+        /**
+         * https://nodered.org/docs/api/library/
+         */
+        library: {
+            sources: [
+                {
+                    id: "team-collaboration-library",
+                    type: "node-red-library-file-store",
+                    path: "/library/",
+                    label: "EWF library",
+                    // icon: "font-awesome/fa-users"
+                }
+            ]
+        },
+
         palette: {
             /** The following property can be used to order the categories in the editor
              * palette. If a node's category is not in the list, the category will get
