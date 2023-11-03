@@ -1,3 +1,4 @@
 /volumes/*
 /flows/*
 !/flows/flows.json
+node_modules
