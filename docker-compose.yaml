@@ -17,3 +17,22 @@ services:
       - ./settings:/settings
       - ./volumes/output-data:/output-data
       - ./flows:/flows
+    networks:
+      public-internet:
+
+  websocket-server:
+    image: node:20.9.0-alpine@sha256:8e015de364a2eb2ed7c52a558e9f716dcb615560ffd132234087c10ccc1f2c63
+    working_dir: /app
+    command: ws-server/index.mjs
+    environment:
+      PORT: 80
+      MSG_INTERVAL: 5000
+    volumes:
+      - ./:/app
+    networks:
+      public-internet:
+        aliases:
+          - bogus-ws.energyweb.org
+
+networks:
+  public-internet:
