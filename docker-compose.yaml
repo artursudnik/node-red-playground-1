@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   node-red:
-    image: nodered/node-red@sha256:cf9749f31fdaee0a87a27aebf97ef6c051e1b6e77f021806f876055ae8d0b4c8
+    image: nodered/node-red:3.1.2@sha256:097ba1a042e00a71e43d836c5e6b7b4ca03957ebd3c963ab0755dd2285997f9a
     environment:
       - TZ=Europe/Warsaw
       - FLOWS=/flows/flows.json
