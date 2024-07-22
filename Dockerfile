@@ -1,3 +1,3 @@
-FROM nodered/node-red:3.1.10@sha256:13b5783bf170e87df18d3b881750d2b00c0164163f89ad47d03f6fc4cbe5e2d9
+FROM nodered/node-red:3.1.11@sha256:db8329d3cc6c6d6aa8bf9c558c89a1f0f33813acb73955815b32e34c15bd1df4
 
 RUN npm install node-red-contrib-object-hash
